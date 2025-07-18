@@ -1,0 +1,190 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(black, #111);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+.logo {
+  font-size: 2rem;
+  color: green;
+}
+
+.nav-class-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu li a:hover {
+  color: green;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12em 8em; 
+  gap: 2em;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1 1 300px;
+}
+
+.hero-content h1 {
+  font-size: 2.1rem;
+  margin-top: 0.1rem;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 500px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-class-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 3em 1em;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .services {
+    flex-direction: column;
+    
+
+  }
+
+   .services-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+  }
+
+  .services-content section {
+    width: 500px;
+    flex-direction: column;
+  }
+}
+
+.services {
+  background-color: #1a1a1a; 
+  padding: 4em 1em;         
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.services-content {
+display: flex;
+flex-wrap: wrap;
+padding: 2em 5em;
+align-items: center;
+text-align: center;
+gap: 4.5rem;
+
+
+}
+
+
+.services-content section {
+  background-color: #222;
+  padding: 2em;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: start;
+  margin-bottom: 2em;
+  transition: transform 0.3s ease;
+}
+
+.service1 {
+font-size: 0.8rem;
+
+
+}
+
+.service2 {
+font-size: 0.8rem;
+text-align: start;
+
+
+
+}
+
+.service3 {
+font-size: 0.8rem;
+
+
+
+}
+
+
+.services-content section:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px green;
+}
+
+
+
