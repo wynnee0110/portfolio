@@ -8,9 +8,46 @@
     <link rel = "stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/finisher-header@1.1.1/dist/finisher-header.min.js"></script>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+@keyframes appear {
+from{
+  opacity: 0%;
+  scale: 50%;
+}
+to {
+  opacity:100%;
+  scale:100%;
+
+}
+}
+.services-content {
+  animation:appear linear;
+  animation-timeline:view();
+  animation-range: entry 0;
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
+  <canvas id="finisher-canvas"></canvas>
+
   
 
     <header>
@@ -30,8 +67,14 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>Hello, I'm Wayne</h1>
-      <h2>UI/UX DEVELOPER</h2>
+      <h2><span style = "color: green;">UI/UX</span> DEVELOPER</h2>
       <p>Front-End Developer passionate about crafting responsive web apps.</p>
+      <div class="social-icons">
+  <a href="https://www.linkedin.com/in/wayne-obial-5404a4374/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/waynnee1_/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/wynnee0110" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
     </div>
   </section>
 
@@ -127,7 +170,35 @@
   </div>
 </section>
 
-    
+    <script>
+  new FinisherHeader({
+    "count": 100,
+    "size": {
+      "min": 2,
+      "max": 8,
+      "pulse": 0
+    },
+    "speed": {
+      "x": {
+        "min": 0,
+        "max": 0.4
+      },
+      "y": {
+        "min": 0,
+        "max": 0.4
+      }
+    },
+    "colors": {
+      "background": "#00000000", // transparent
+      "particles": ["#00ff99", "#ffffff", "#33ffcc"]
+    },
+    "blending": "screen",
+    "opacity": 0.7,
+    "skew": 0,
+    "shapes": ["circle"],
+  });
+</script>
+
 
     
 </body>
