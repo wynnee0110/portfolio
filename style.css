@@ -8,8 +8,8 @@ body {
   overflow-x: hidden;
       background: radial-gradient(
     circle at center,
-    rgb(0, 0, 0),   /* inner color */
-    rgb(44, 44, 44)   /* outer fade */
+    rgb(0, 0, 0),  
+    rgb(44, 44, 44)  
   );
   border-radius: 10px;
 }

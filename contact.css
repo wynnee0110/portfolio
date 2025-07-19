@@ -1,0 +1,88 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem; 
+  padding: 6em 2rem;
+  flex-wrap: wrap; 
+  text-align: left;
+}
+
+.contactme-container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.1rem;
+}
+
+.contacts form {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  line-height: 20px;
+}
+
+.contacts input,
+.contacts textarea {
+  width: 90%;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.contacts input::placeholder,
+.contacts textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.contacts form div {
+  margin-bottom: 20px;
+}
+
+.contacts textarea {
+  resize: none;
+}
+
+button {
+  display: flex;
+  margin-left: 30%;
+  padding: 10px 40px;
+     background: radial-gradient(
+    circle at center,
+    rgba(0, 255, 149, 0.587),  
+    rgba(7, 26, 54, 0.699)   
+  );
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: green;
+  font-weight: bold;
+
+}
+
+button:hover {
+  filter: brightness(1.5);
+  
+
+
+
+
+}
+
+
+
+.contactme-container h2{
+  font-weight: bold;
+  font-size: 2.5rem;
+
+}
+
+
