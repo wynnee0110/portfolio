@@ -28,21 +28,7 @@ to {
   animation-range: entry 0;
 }
 
-
-
-
-
 </style>
-
-
-
-
-
-
-
-
-
-
 
 </head>
 <body>
@@ -116,14 +102,41 @@ to {
     </section>
 
 
+<section class = "projects">
 
+  <div class = "projects-container">
+        <div class="projects-text">
+      <h2>POS SYSTEM</h2>
+      <ul>
+     <li>Real-time inventory tracking</li>
+     <li>Secure login and user roles</li>
+     <li>Receipt generation</li>
+     <li>Sales history and reporting</li>
+     </ul>
+      <p></p>
+    </div>
     
+    <div class = "projects-slider">
+      <div class = "slides">
+      <img src="images/image.png" class="slide" alt="Slider 1 - Image 1">
+      <img src="images/image copy.png" class="slide" alt="Slider 1 - Image 2">
+      <img src="images/image copy 2.png" class="slide" alt="Slider 1 - Image 3">
+      <img src="images/image copy 3.png" class="slide" alt="Slider 1 - Image 4">
+      
 
+  </div>
 
+    </div>
+     <div class="slider-controls">
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+  </div>
+</div>
+  </div>
+  
 
-
-
-
+  
+</section>
 
 
 
@@ -194,37 +207,45 @@ to {
 
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slidesContainer = document.querySelector('.slides');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
 
-    <script>
-  new FinisherHeader({
-    "count": 100,
-    "size": {
-      "min": 2,
-      "max": 8,
-      "pulse": 0
-    },
-    "speed": {
-      "x": {
-        "min": 0,
-        "max": 0.4
-      },
-      "y": {
-        "min": 0,
-        "max": 0.4
+    let currentScroll = 0;
+
+    const slide = slidesContainer.querySelector('.slide');
+    const slideWidth = slide ? slide.clientWidth : 0;
+
+    nextBtn.addEventListener('click', () => {
+      const maxScroll = slidesContainer.scrollWidth - slidesContainer.clientWidth;
+      if (currentScroll + slideWidth <= maxScroll) {
+        currentScroll += slideWidth;
+        slidesContainer.scrollTo({
+          left: currentScroll,
+          behavior: 'smooth'
+        });
       }
-    },
-    "colors": {
-      "background": "#00000000", // transparent
-      "particles": ["#00ff99", "#ffffff", "#33ffcc"]
-    },
-    "blending": "screen",
-    "opacity": 0.7,
-    "skew": 0,
-    "shapes": ["circle"],
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentScroll - slideWidth >= 0) {
+        currentScroll -= slideWidth;
+        slidesContainer.scrollTo({
+          left: currentScroll,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 </script>
+<script src="slider.js"></script>
 
 
     
 </body>
 </html>
+
+
+

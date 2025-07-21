@@ -138,6 +138,7 @@ padding:1.5rem 4rem;
     width: 500px;
     flex-direction: column;
   }
+  
 
 }
 
@@ -287,8 +288,84 @@ font-size: 0.8rem;
 }
 
 
+.projects {
+ margin: 0;
+ height: 200vh;
+
+
+
+}
+
+
+
+.projects-slider{
+position: relative;
+background-color: rgb(0, 0, 0);
+width: 100%;
+max-width: 350px;
+height: 200px;
+box-shadow: 0 0 50px;
+border-radius: 50px;
+overflow: hidden;
+
+}
+
+
+.slides img{
+width: 100%;
+  height: auto;
+  flex-shrink: 0;
+
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  overflow-x: auto;       
+  scroll-behavior: smooth; 
+}
+
+
+.next-btn, .prev-btn {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0em 25em;
+}
 
 
 
 
+.projects-container {
+  display: flex;
+  gap: 5rem; /* adds a clear space between text and image */
+  justify-content: center; /* centers both elements */
+  align-items: flex-start; /* aligns top of both sections */
+  padding: 5rem 2rem; /* less extreme padding */
+  flex-wrap: wrap;
+}
+
+.projects-text {
+  flex: 1;
+  max-width: 400px;
+  color: white;
+  text-align: start;
+  
+}
 
