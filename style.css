@@ -1,27 +1,20 @@
-
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(rgb(0, 0, 0), #575757);
+  background: radial-gradient(circle at center, rgb(0, 0, 0), rgb(44, 44, 44));
   font-family: Arial, sans-serif;
   color: white;
   overflow-x: hidden;
-      background: radial-gradient(
-    circle at center,
-    rgb(0, 0, 0),  
-    rgb(44, 44, 44)  
-  );
   border-radius: 10px;
 }
 
-.logo-img{
-width:30px;
-height:30px;
-padding:1.5rem 4rem;
-
-
-
+.logo-img {
+  width: 30px;
+  height: 30px;
+  padding: 1.5rem 4rem;
 }
+
+
 .logo {
   font-size: 2rem;
   color: green;
@@ -57,7 +50,7 @@ padding:1.5rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12em 8em; 
+  padding: 12em 8em;
   gap: 2em;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -70,23 +63,21 @@ padding:1.5rem 4rem;
 
 .hero-content h1 {
   font-size: 1.5rem;
-  margin-top: 0.rem;
-  line-height:0 ;
+  margin-top: 0;
+  line-height: 0;
 }
 
 .hero-content h2 {
   font-size: 3rem;
   margin-bottom: 0.1rem;
-  line-height: 0.5 ;
-  
+  line-height: 0.5;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   max-width: 500px;
-  line-height: 1.5 ;
+  line-height: 1.5;
 }
-
 
 @media (max-width: 768px) {
   .nav-class-container {
@@ -111,10 +102,7 @@ padding:1.5rem 4rem;
     text-align: center;
   }
 
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
+  .hero-content h1,
   .hero-content h2 {
     font-size: 1.5rem;
   }
@@ -122,13 +110,9 @@ padding:1.5rem 4rem;
   .hero-content p {
     font-size: 1rem;
   }
-  .services {
-    flex-direction: column;
-    
 
-  }
-
-   .services-content {
+  .services,
+  .services-content {
     flex-direction: column;
     align-items: center;
     padding: 2em 1em;
@@ -138,13 +122,11 @@ padding:1.5rem 4rem;
     width: 500px;
     flex-direction: column;
   }
-  
-
 }
 
 .services {
-  background-color: #1a1a1a; 
-  padding: 4rem 0 ;         
+  background-color: #1a1a1a;
+  padding: 4rem 0;
   display: flex;
   font-size: 1.3rem;
   flex-direction: column;
@@ -153,20 +135,14 @@ padding:1.5rem 4rem;
   letter-spacing: 0.5px;
 }
 
-
-
-
 .services-content {
-display: flex;
-flex-wrap: wrap;
-padding: 2em 5em;
-align-items: center;
-text-align: center;
-gap: 4.5rem;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 5em;
+  align-items: center;
+  text-align: center;
+  gap: 4.5rem;
 }
-
 
 .services-content section {
   background-color: #222;
@@ -174,40 +150,17 @@ gap: 4.5rem;
   border-radius: 10px;
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: start;
   margin-bottom: 2em;
   transition: transform 0.3s ease;
+  font-size: 0.8rem;
 }
-
-.service1 {
-font-size: 0.8rem;
-
-
-}
-
-.service2 {
-font-size: 0.8rem;
-text-align: start;
-
-
-
-}
-
-.service3 {
-font-size: 0.8rem;
-
-
-
-}
-
 
 .services-content section:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px green;
 }
-
-
 
 .skills-section {
   padding: 2rem 2rem;
@@ -224,16 +177,11 @@ font-size: 0.8rem;
 }
 
 .skill-box {
-    background: radial-gradient(
-    circle at center,
-    rgba(0, 255, 150, 0.2),   /* inner color */
-    rgba(0, 100, 255, 0.05)   /* outer fade */
-  );
+  background: radial-gradient(circle at center, rgba(0, 255, 150, 0.2), rgba(0, 100, 255, 0.05));
   border-radius: 10px;
-  
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 2rem 1rem;
   text-align: center;
   transition: transform 0.3s ease;
@@ -247,7 +195,7 @@ font-size: 0.8rem;
 .skill-box h3 {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .icons {
@@ -261,6 +209,7 @@ font-size: 0.8rem;
   width: 50px;
   height: auto;
 }
+
 #finisher-canvas {
   position: fixed;
   top: 0;
@@ -270,6 +219,7 @@ font-size: 0.8rem;
   height: 100%;
   pointer-events: none;
 }
+
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -287,47 +237,80 @@ font-size: 0.8rem;
   color: green;
 }
 
-
 .projects {
- margin: 0;
- height: 200vh;
-
-
-
-}
-
-
-
-.projects-slider{
-position: relative;
-background-color: rgb(0, 0, 0);
-width: 100%;
-max-width: 350px;
-height: 200px;
-box-shadow: 0 0 50px;
-border-radius: 50px;
-overflow: hidden;
-
-}
-
-
-.slides img{
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 5rem 2rem;
   height: auto;
-  flex-shrink: 0;
+}
 
+.projects-slider,
+.projects-slider-login {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 200px;
+  box-shadow: 0 0 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .slides {
+  
   display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
-  overflow-x: auto;       
-  scroll-behavior: smooth; 
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar,
+.slides-login::-webkit-scrollbar {
+  display: none;
+}
+
+.slides-login {
+  
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar,
+.slides-login::-webkit-scrollbar {
+  display: none;
 }
 
 
-.next-btn, .prev-btn {
+.slides img {
+
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+
+.slides-login img {
+  width:200%;
+  max-width: 480px;
+  object-fit: cover;
+  scroll-snap-align: center;
+  
+
+}
+
+.next-btn,
+.prev-btn {
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -341,24 +324,22 @@ width: 100%;
   justify-content: center;
   transition: background-color 0.3s ease;
 }
+
 .slider-controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
-  padding: 0em 25em;
+  padding: 0 25em;
 }
-
-
-
 
 .projects-container {
   display: flex;
-  gap: 5rem; /* adds a clear space between text and image */
-  justify-content: center; /* centers both elements */
-  align-items: flex-start; /* aligns top of both sections */
-  padding: 5rem 2rem; /* less extreme padding */
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projects-text {
@@ -366,6 +347,48 @@ width: 100%;
   max-width: 400px;
   color: white;
   text-align: start;
-  
 }
 
+.projects-container-login-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+}
+
+.projects-text-login {
+  display: inline;
+  padding-left: 10rem;
+}
+
+.slider-controls-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.prev-btn-login,
+.next-btn-login {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn-login:hover,
+.next-btn-login:hover {
+  background-color: #555;
+}
