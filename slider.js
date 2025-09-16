@@ -16,3 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000); // Slide every 3 seconds
   });
 });
+ 

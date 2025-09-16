@@ -1,7 +1,30 @@
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+/* Divider line between hero and projects */
+.section-divider {
+  border: none;
+  height: 3px;
+  width: 40%;
+  margin: 3rem auto 2rem auto;
+  background: white;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+@font-face {
+  font-family: 'Google-sans';
+  src: url('fonts/ProductSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
-  min-height: 100vh;
-  background: radial-gradient(circle at center, rgb(0, 0, 0), rgb(44, 44, 44));
+  min-height: 500vh;
+  background: radial-gradient(circle at center, rgb(22, 22, 22), rgb(44, 44, 44));
   font-family: Arial, sans-serif;
   color: white;
   overflow-x: hidden;
@@ -29,6 +52,8 @@ body {
   align-items: center;
   padding: 1em 2em;
   flex-wrap: wrap;
+  
+  
 }
 
 .nav-menu {
@@ -53,7 +78,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12em 8em;
+  padding: 8em 8em;
   gap: 2em;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -168,48 +193,91 @@ body {
 }
 
 .projects-section {
-
-  font-size: 2rem;
+  font-size: 5rem;
   text-align: center;
+  margin-top: -100px;
+
 }
 
+.projects-section h2 {
+  font-size: 12rem;
 
-.projects-grid {
+  text-align: center;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff0000);
+  background-size: 600% 600%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }  
+}
+
+.projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 800px;
-  height: 90vh;
-  margin: 0 auto;
-  background-color: rgb(52, 52, 56);
-  border-radius: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  padding: 0;
+  justify-items: center;
 }
 
 .project-card {
-  width: 360px;
-  height: 200px;
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;  
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  border-style: solid;
+  border-color: #424242;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  scale: 1.03;
-  filter: blur(2px);
-}
-.project-image1 {
+.project-card img {
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+.project-info {
+  background-color: rgb(24, 24, 24);
+  height: 200px;
+  border-radius: 10px;
+  border-color: #272727;
+  border-style: solid;
   display: flex;
-  align-items: stretch;
-  justify-content: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+.project-info h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0 1rem;
+  margin: 0;
+  text-align: left;
+  vertical-align: top;
+  align-self: flex-start;
+  font-family: "Google-sans", sans-serif;
+
 }
 
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  font-family:'Google-sans', sans-serif;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+
+}
+
+
+.project-info i {
+  font-size: 2.5rem;
+  color: #fff;
+}
