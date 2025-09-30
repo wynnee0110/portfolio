@@ -22,7 +22,8 @@
   font-style: normal;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   min-height: 500vh;
   background: radial-gradient(circle at center, rgb(22, 22, 22), rgb(44, 44, 44));
   font-family: Arial, sans-serif;
@@ -196,6 +197,9 @@ body {
   font-size: 5rem;
   text-align: center;
   margin-top: -100px;
+  padding: 0;
+  margin: 0;
+
 
 }
 
@@ -217,67 +221,56 @@ body {
       100% { background-position: 0% 50%; }  
 }
 
-.projects-container {
+
+.project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  padding: 0;
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin: 0 auto;
+
 }
+
+.project-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin-top: 50px;
+
+
+}
+
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  width: 500px;
-  height: 300px;
-  border-style: solid;
-  border-color: #424242;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+width: 700px;
+margin-left: 40px;
+height: 270px;
+background-color: #c0c0c0;
+border-radius: 10px;
 
 }
 
-.project-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-
-}
-.project-info {
-  background-color: rgb(24, 24, 24);
-  height: 200px;
-  border-radius: 10px;
-  border-color: #272727;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-bottom: 1rem;
-}
-.project-info h3 {
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem 0 1rem;
-  margin: 0;
-  text-align: left;
-  vertical-align: top;
-  align-self: flex-start;
-  font-family: "Google-sans", sans-serif;
+.project-card2{
+width: 450px;
+margin-right: 20px;
+height: 270px;
+background-color: #c0c0c0;
+border-radius: 10px;
 
 }
 
-.project-icons {
-  display: flex;
-  flex-direction: row;
-  font-family:'Google-sans', sans-serif;
-  gap: 0.7rem;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-
+.project-card3{
+width: 450px;
+margin-left: 20px;
+height: 270px;
+background-color: #c0c0c0;
+border-radius: 10px;
 }
 
+.project-card4{
+width: 700px;
+margin-right: 40px;
+height: 270px;
+background-color: #c0c0c0;
+border-radius: 10px;
 
-.project-info i {
-  font-size: 2.5rem;
-  color: #fff;
 }
